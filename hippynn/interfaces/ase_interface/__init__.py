@@ -8,4 +8,6 @@ from .pairfinder import ASEPairNode
 
 from .ase_database import AseDatabase
 
-__all__ = ["HippynnCalculator", "calculator_from_model", "AseDatabase"]
+from .neighbor_list import NeighborList
+
+__all__ = ["HippynnCalculator", "calculator_from_model", "AseDatabase", "NeighborList"]
