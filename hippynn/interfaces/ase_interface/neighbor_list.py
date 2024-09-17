@@ -31,7 +31,7 @@ class NeighborList:
                    backend)
 
     def __post_init__(self):
-       self.update(self.coords)
+       self.update(self.coords, self.cell, self.pbc)
 
     def update(self, coords, cell, pbc):
         # if any atom moved more than "buffer", update the nbr list
